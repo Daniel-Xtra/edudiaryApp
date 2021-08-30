@@ -1,0 +1,20 @@
+.footer{
+    background-color: #fafbfc;
+    padding:5px;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    /* border-top: 1px solid black; */
+}
+
+img{
+    margin: 10px;
+}
+
+span{
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+}

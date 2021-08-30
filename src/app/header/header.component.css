@@ -1,0 +1,48 @@
+body{
+    font-family: 'Nanum Myeongjo', serif;
+}
+.btn{
+    background: #3281ff;
+}
+.btn:active,.btn:focus {
+    text-decoration: none;
+    outline:none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+    background: #3281ff !important;
+
+ }
+ 
+ .navbar-toggler{
+     color:#545b62;
+     outline:none !important;
+     box-shadow: none !important;
+     border-color: transparent !important;
+     
+ }
+ 
+ .navbar-toggler:active,.navbar-toggler:focus{
+     outline:none !important;
+     box-shadow: none !important;
+     border-color: transparent !important;
+ }
+ 
+
+ 
+ .navbar-brand{
+     font-family: 'Nanum Myeongjo', serif;
+ }
+ 
+ .nav-link{
+     font-family: 'Nanum Myeongjo', serif;
+     text-transform: capitalize;
+ }
+ .nav-item{
+     margin: 10px;
+ }
+
+ @media (max-width:767px) {
+     .nav-item{
+         margin: 0%;
+     }
+ }
