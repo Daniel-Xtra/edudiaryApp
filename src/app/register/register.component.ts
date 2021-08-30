@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -12,7 +13,10 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  reactiveForm = new FormGroup({
+    email: new FormControl(),
+    password: new FormControl()
+  });
   login(){
     this.router.navigate(['/login'])
   }

@@ -1,70 +1,189 @@
 <div class="container">
-   
-       <form>
-        <h3>Create an Account</h3>
-           <div class="row d-flex">
-              
-               <div class="form-group col-md-6">
-                   <label for="firstname">first name</label>
-                   <input type="text" class="form-control" formControlName="firstname" ngModel>
-               </div>
-               <div class="form-group col-md-6">
-                   <label for="lastname">last name</label>
-                   <input type="text" class="form-control" formControlName="lastname" ngModel>
-               </div>
-               <div class="form-group col-md-12">
-                   <label for="username">username</label>
-                   <input type="text" class="form-control" formControlName="username" ngModel>
-               </div>
-               <div class="form-group col-md-12">
-                   <label for="email">email</label>
-                   <input type="email" class="form-control" formControlName="email" ngModel>
-               </div>
-               <div class="form-group col-md-12">
-                   <label for="phone">phone number</label>
-                   <input type="tel" class="form-control" formControlName="phone" ngModel>
-               </div>
-               <div class="form-group col-md-12">
-                   <label for="password">password</label>
-                   <input type="password" class="form-control" formControlName="password" ngModel>
-               </div>
-               <div class="form-group col-md-12">
-                   <label for="date_of_birth">date of birth</label>
-                   <input type="date" class="form-control" formControlName="date_of_birth" ngModel>
-               </div>
-               <div class="custom-control custom-checkbox ml-3 mb-3">
-                <input type="checkbox" class="custom-control-input" id="customControlValidation1">
-                <label class="custom-control-label" for="customControlValidation1">Subscribe to Newsletter</label>      
-              </div>
-              <!-- <div class="form-group ">        
-                <div class="col">
-                  <div class="checkbox">
-                    <input type="checkbox" id="sub">
-                    <label for="sub" class="pl-2">Subscribe to Newsletter</label>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">        
-                <div class="col">
-                  <div class="checkbox">
-                    <input type="checkbox" id="agree">
-                    <label for="agree" class="pl-2"> i agree with the <a>terms and conditions</a> and <a>privacy policy</a></label>
-                  </div>
-                </div>
-              </div> -->
-               <div class="custom-control custom-checkbox ml-3 mb-3">
-                <input type="checkbox" class="custom-control-input" id="customControlValidation2">
-                <label class="custom-control-label link" for="customControlValidation2"> i agree with the <a>terms and conditions</a> and <a>privacy policy</a></label>
-               </div>
-               <div class="col-md-12">
-                   <button class="btn  btn-primary login_btn">Sign Up</button>
-               </div>
-               <div class="mt-4 col-md-12 text-center">
-        
-                   <p class="mb-5 link">Have an account? <a  (click)="login()" style="cursor: pointer;">Login</a></p>
-        
-              </div>
-           </div>
-       </form>
 
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <div class="card">
+
+            <div class=" form_container">
+      
+                <form >
+                
+                  <div class="container">
+      
+                    <div class="row">
+                      <!-- **Personal Information** -->
+                      <div class="col-md-12">
+                        <h3>Create Account</h3>
+                      </div>
+                     
+       
+      
+                    <!-- **//Firstname**// -->
+                      <div class="form-group col-md-6 col-sm-12">
+      
+                            <label for="first_name">Firstname</label>
+      
+                              <input
+                              type="text"
+                              id="first_name"
+                              placeholder="firstname"
+                              class="form-control"
+                             />
+              
+                      </div>
+                      <div class="form-group col-md-6 col-sm-12">
+      
+                          <label for="lastname">lastname</label>
+      
+                            <input
+                            type="text"
+                            placeholder="lastname"
+                            class="form-control"
+      
+                           />
+            
+                    </div>
+                    <div class="form-group col-md-12 col-sm-12">
+      
+                        <label for="username">username</label>
+    
+                          <input
+                          type="text"
+                          placeholder="username"
+                          class="form-control"
+    
+                         />
+          
+                    </div>
+       
+            
+                    <!-- **//Email**// -->
+                    <div class="form-group col-md-12 col-sm-12">
+      
+                        <label for="email">email address</label>
+        
+                          <input
+                            type="email"
+                            id="email"
+                            placeholder="Your Email"
+                            class="form-control"
+                         
+                            required
+                            name="email"
+                          
+                            />
+                         
+                  </div>
+                                      <!-- **//Phone_number**// -->
+                      <div class="form-group col-md-12 col-sm-12">
+      
+                          <label for="phone_number">Phone Number</label>
+                               
+                            <input
+                              type="text"
+                              id="phone_number"
+                              placeholder="Your Phone Number"
+                              class="form-control"
+      
+                              name="phone_number"
+                              required
+      
+                              />
+      
+                      </div>
+                                          <!-- **//Phone_number**// -->
+                      <div class="form-group col-md-12 col-sm-12">
+      
+                          <label for="password">password</label>
+                               
+                            <input
+                              type="password"
+                           
+                              placeholder="Password"
+                              class="form-control"
+                              required
+      
+                              />
+      
+                      </div>
+                    <!-- **//Gender**// -->
+                      <div class="form-group col-md-12 col-sm-12">
+            
+                        <label for="gender">Gender</label>
+                        <select 
+                        class="form-control"                   
+                        required
+                        name="gender"
+                        >
+                        
+                        <option>male</option>
+                        <option>female</option>
+          
+                        </select>
+                    
+                      </div>
+                    
+                    <!-- **//D_O_B**// -->
+                    <div class="form-group col-md-12 col-sm-12">
+                      <label for="date_of_birth">Date of birth</label>
+        
+                          <input
+                            type="date" 
+                            id="date"
+                            placeholder="Your D_O_B"
+                            class="form-control"
+                           
+                            required
+                            name="date_of_birth"
+                            minlength="6"
+                           />
+      
+                    </div>
+      
+                    <div class="col-md-12">
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="autoSizingChec">
+                            <label class="form-check-label" for="autoSizingChec">
+                              Subscribe to Newsletter
+                            </label>
+                          </div>
+                    </div>
+      
+                    <div class="col-md-12">
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                            <label class="form-check-label" for="autoSizingCheck">
+                              i agree with the <a>terms and condition </a> and <a>privacy policy</a>
+                            </label>
+                          </div>
+                    </div>
+                        <!-- SignUp -->
+                    <div class="form-group col-md-12">
+            
+                        <button class="btn">Sign Up</button>
+            
+                    </div>
+      
+                    <div class="col-md-12">
+                        <p class="link">Have an Account? <a>login</a></p>
+                    </div>
+                        
+                    </div>
+             
+                  </div>
+            
+                </form>
+      
+                  <!-- <div class="alert alert-success" *ngIf="isSuccessful">
+      
+                     Already Registered!
+      
+                  </div> -->
+      
+             </div>
+            
+          </div>
+    </div>
+</div>
+    
 </div>

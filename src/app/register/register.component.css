@@ -1,25 +1,26 @@
+ .card {
 
-.container{
-	margin-top: 80px;
-	margin-bottom:0px;
-	width:550px;
-	padding: 25px;
-	box-sizing: border-box;
-	background: #f8f9fa;
-	box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
-}	
-
-input{
+	margin-top: 150px;
+	margin-bottom:150px;
+ 	background:#f8f9fa;
+	 padding: 40px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 10px;
+ 
+ }
+ input,select{
 	background:#ecf0f3;
 	padding:10px;
 	padding-left: 20px;
-	height:40px;
+	/* height:50px; */
 	font-size: 14px;
-    border-color: transparent;
-    outline: none !important;
-
 }
 
+.form-group input,select{
+	height: 50px;
+}
 .btn{
 	margin-top:10px;
 	background: #3281ff;
@@ -44,10 +45,10 @@ input{
 	border-color: transparent !important;
 }
 
-input:focus,input:active {
-	outline:none !important;
+input,select:active,input,select:focus{
+    outline:none !important;
     box-shadow: none !important;
-    border-color: #3281ff ;
+    border-color: transparent;
 }
 
 
@@ -60,6 +61,9 @@ label{
 .pl-4{
 	text-transform: capitalize;
 
+}
+.link{
+	text-align: center;
 }
 
 label a, .link a{
