@@ -1,8 +1,7 @@
 
 .container{
 	margin-top: 80px;
-	/* margin-bottom:50px; */
-	height: unset;
+	margin-bottom:0px;
 	width:550px;
 	padding: 25px;
 	box-sizing: border-box;
@@ -14,7 +13,7 @@ input{
 	background:#ecf0f3;
 	padding:10px;
 	padding-left: 20px;
-	height:50px;
+	height:40px;
 	font-size: 14px;
     border-color: transparent;
     outline: none !important;
