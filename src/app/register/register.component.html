@@ -34,19 +34,34 @@
                </div>
                <div class="custom-control custom-checkbox ml-3 mb-3">
                 <input type="checkbox" class="custom-control-input" id="customControlValidation1">
-                <label class="custom-control-label" for="customControlValidation1">Subscribe to Newsletter</label>
-                
+                <label class="custom-control-label" for="customControlValidation1">Subscribe to Newsletter</label>      
               </div>
+              <!-- <div class="form-group ">        
+                <div class="col">
+                  <div class="checkbox">
+                    <input type="checkbox" id="sub">
+                    <label for="sub" class="pl-2">Subscribe to Newsletter</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">        
+                <div class="col">
+                  <div class="checkbox">
+                    <input type="checkbox" id="agree">
+                    <label for="agree" class="pl-2"> i agree with the <a>terms and conditions</a> and <a>privacy policy</a></label>
+                  </div>
+                </div>
+              </div> -->
                <div class="custom-control custom-checkbox ml-3 mb-3">
                 <input type="checkbox" class="custom-control-input" id="customControlValidation2">
-                <label class="custom-control-label" for="customControlValidation2"> i agree with the <a href="#">terms and conditions</a> and <a href="#">privacy policy</a></label>
+                <label class="custom-control-label link" for="customControlValidation2"> i agree with the <a>terms and conditions</a> and <a>privacy policy</a></label>
                </div>
                <div class="col-md-12">
-                   <button class="btn  btn-primary login_btn">Login</button>
+                   <button class="btn  btn-primary login_btn">Sign Up</button>
                </div>
-               <div class="mt-4 col-md-12">
+               <div class="mt-4 col-md-12 text-center">
         
-                   <p class="mb-5">Have an account? <a  href="#"style="cursor: pointer;">Login</a></p>
+                   <p class="mb-5 link">Have an account? <a  (click)="login()" style="cursor: pointer;">Login</a></p>
         
               </div>
            </div>

@@ -1,12 +1,10 @@
-/* form{
-    margin-top:100px;
-} */
+
 .container{
-	margin-top: 100px;
-	margin-bottom:50px;
-	width:550px;
+	margin-top: 80px;
+	/* margin-bottom:50px; */
 	height: unset;
-	padding: 40px;
+	width:550px;
+	padding: 25px;
 	box-sizing: border-box;
 	background: #f8f9fa;
 	box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
@@ -20,8 +18,7 @@ input{
 	font-size: 14px;
     border-color: transparent;
     outline: none !important;
-/* 	
-	box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white; */
+
 }
 
 .btn{
@@ -54,6 +51,8 @@ input:focus,input:active {
     border-color: #3281ff ;
 }
 
+
+
 label{
 	text-transform: capitalize;
 	font-weight: 400;
@@ -62,4 +61,8 @@ label{
 .pl-4{
 	text-transform: capitalize;
 
+}
+
+label a, .link a{
+	color: #3281ff;
 }

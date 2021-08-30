@@ -3,8 +3,8 @@
 
   <form [formGroup]="reactiveForm">
     <div class="row">
-      <div class="col-md-12- text-center">
-        <h3>Connect with Colleagues Real-time</h3>
+      <div class="col-md-12 text-center">
+        <h3>Connect with myPal Real-time</h3>
         <p>log in to your account</p>
       </div>
     </div>
@@ -62,7 +62,7 @@
 
           <a style="cursor: pointer">Forgot Password?</a>
 
-           <p class="mb-5">Don't have an account? <a style="cursor: pointer;">Create an account</a></p>
+           <p class="mb-5">Don't have an account? <a (click)="createAcc()"  style="cursor: pointer;">Create an account</a></p>
 
         </div>
 

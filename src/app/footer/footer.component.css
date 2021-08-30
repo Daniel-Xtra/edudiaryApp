@@ -6,6 +6,7 @@
     bottom: 0;
     position: fixed;
     /* border-top: 1px solid black; */
+    z-index: 1;
 }
 
 img{
