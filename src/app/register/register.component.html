@@ -11,52 +11,54 @@
                   <div class="container">
       
                     <div class="row">
-                      <!-- **Personal Information** -->
+
                       <div class="col-md-12">
                         <h3>Create Account</h3>
                       </div>
-                     
-       
       
                     <!-- **//Firstname**// -->
-                      <div class="form-group col-md-6 col-sm-12">
+                    <div class="form-group col-md-6 col-sm-12">
       
-                            <label for="first_name">Firstname</label>
+                            <label for="firstname">Firstname</label>
       
                               <input
                               type="text"
-                              id="first_name"
-                              placeholder="firstname"
+                              formControlName="firstname"
+                              placeholder="Daniel"
                               class="form-control"
-                             />
+                              ngModel
+                             >
               
-                      </div>
-                      <div class="form-group col-md-6 col-sm-12">
+                    </div>
+
+                    <div class="form-group col-md-6 col-sm-12">
       
                           <label for="lastname">lastname</label>
       
                             <input
                             type="text"
-                            placeholder="lastname"
+                            placeholder="Ezechukwu"
                             class="form-control"
-      
+                            formControlName="lastname"
+                            ngModel
                            />
             
                     </div>
+
                     <div class="form-group col-md-12 col-sm-12">
       
                         <label for="username">username</label>
     
                           <input
                           type="text"
-                          placeholder="username"
+                          placeholder="devKreate@12"
                           class="form-control"
-    
+                          formControlName="username"
+                          ngModel
                          />
           
                     </div>
        
-            
                     <!-- **//Email**// -->
                     <div class="form-group col-md-12 col-sm-12">
       
@@ -65,55 +67,58 @@
                           <input
                             type="email"
                             id="email"
-                            placeholder="Your Email"
+                            placeholder="someone@example.com"
                             class="form-control"
-                         
+                            formControlName="email"
                             required
                             name="email"
                           
                             />
                          
-                  </div>
-                                      <!-- **//Phone_number**// -->
-                      <div class="form-group col-md-12 col-sm-12">
+                    </div>
+
+                      <!-- **//Phone_number**// -->
+                    <div class="form-group col-md-12 col-sm-12">
       
                           <label for="phone_number">Phone Number</label>
                                
                             <input
-                              type="text"
-                              id="phone_number"
-                              placeholder="Your Phone Number"
+                              type="tel"
+                              placeholder="08025030347"
                               class="form-control"
-      
-                              name="phone_number"
+                              formControlName="phone_number"
+                              ngModel
                               required
       
                               />
       
-                      </div>
-                                          <!-- **//Phone_number**// -->
-                      <div class="form-group col-md-12 col-sm-12">
+                    </div>
+
+                      <!-- **//Password**// -->
+                    <div class="form-group col-md-12 col-sm-12">
       
-                          <label for="password">password</label>
+                        <label for="password">password</label>
                                
-                            <input
-                              type="password"
-                           
-                              placeholder="Password"
-                              class="form-control"
-                              required
+                          <input
+                            type="password"
+                           formControlName="password"
+                            placeholder="*****"
+                            class="form-control"
+                            required
+                            ngModel
+                          >
       
-                              />
-      
-                      </div>
+                    </div>
+
                     <!-- **//Gender**// -->
-                      <div class="form-group col-md-12 col-sm-12">
+                    <div class="form-group col-md-12 col-sm-12">
             
                         <label for="gender">Gender</label>
                         <select 
-                        class="form-control"                   
+                        class="form-control"  
+                        formControlName="gender"                
                         required
-                        name="gender"
+                        ngModel
                         >
                         
                         <option>male</option>
@@ -121,7 +126,7 @@
           
                         </select>
                     
-                      </div>
+                    </div>
                     
                     <!-- **//D_O_B**// -->
                     <div class="form-group col-md-12 col-sm-12">
@@ -129,14 +134,12 @@
         
                           <input
                             type="date" 
-                            id="date"
-                            placeholder="Your D_O_B"
                             class="form-control"
-                           
+                            formControlName="date_of_birth"
                             required
                             name="date_of_birth"
-                            minlength="6"
-                           />
+                            ngModel
+                          >
       
                     </div>
       
@@ -157,6 +160,7 @@
                             </label>
                           </div>
                     </div>
+
                         <!-- SignUp -->
                     <div class="form-group col-md-12">
             
@@ -165,7 +169,7 @@
                     </div>
       
                     <div class="col-md-12">
-                        <p class="link">Have an Account? <a>login</a></p>
+                        <p class="link">Have an Account? <a (click)="login()">login</a></p>
                     </div>
                         
                     </div>
@@ -173,12 +177,6 @@
                   </div>
             
                 </form>
-      
-                  <!-- <div class="alert alert-success" *ngIf="isSuccessful">
-      
-                     Already Registered!
-      
-                  </div> -->
       
              </div>
             

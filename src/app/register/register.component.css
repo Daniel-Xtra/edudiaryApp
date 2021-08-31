@@ -68,4 +68,5 @@ label{
 
 label a, .link a{
 	color: #3281ff;
+	cursor: pointer;
 }
