@@ -1,12 +1,9 @@
 .footer{
-    background-color: #fafbfc;
-    padding:5px;
-    left: 0;
-    width: 100%;
-    bottom: 0;
-    position: fixed;
-    /* border-top: 1px solid black; */
-    z-index: 1;
+    color: #fff;
+    text-align: center;
+    padding: 2em 0 2em 0;
+    background-color: #f8f9fa;
+   
 }
 
 img{

@@ -1,24 +1,24 @@
 h3{
 	padding-bottom: 25px;
 	color:#3281ff;
+	text-align: center;
 
 }	
 
-.container{
+.card{
 	margin-top: 100px;
 	margin-bottom:50px;
-	width:400px;
-	height: unset;
-	padding: 40px;
+	padding:20px;
 	box-sizing: border-box;
 	background: #f8f9fa;
 	box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
 }	
 
-.text-center p{
+#head{
     font-size: 20px;
     text-transform: capitalize;
     padding-bottom: 15px;
+	text-align: center;
 }
 
 input{
@@ -29,6 +29,11 @@ input{
 	font-size: 14px;
 	
 	box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+label{
+	text-transform: capitalize;
+	font-weight: 400;
 }
 
 .btn{
@@ -60,6 +65,7 @@ input{
 	height: 40px;
 	width: 100%;
 	border-radius:0%;
+	cursor: pointer;
 	font-weight: 900;
 	color: black !important;   
 }
@@ -76,7 +82,8 @@ input:focus,input:active {
 }
 
 .links a{
-	color:#4D80E4
+	color:#4D80E4;
+	cursor: pointer;
 
 }
 .links{
@@ -92,4 +99,9 @@ input:focus,input:active {
 
 span{
     padding-top:20px
+}
+
+.text-center p{
+	font-size: 20px;
+	
 }

@@ -20,6 +20,10 @@ body{
      border-color: transparent !important;
      
  }
+
+ .fa-2x{
+     font-size: 1em;
+ }
  
  .navbar-toggler:active,.navbar-toggler:focus{
      outline:none !important;
