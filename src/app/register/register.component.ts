@@ -12,7 +12,7 @@ export class RegisterComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    AOS.init({offset:200,easing:'ease-in-sine'});
+    AOS.init({duration:400,easing:'ease-in-sine'});
     AOS.refresh()
   }
   reactiveForm = new FormGroup({

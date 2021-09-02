@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
 
 <div class="row">
     <div class="col-md-6 offset-md-3">
@@ -16,7 +16,7 @@
                         <h3>Create Account</h3>
                       </div>
       
-                    <!-- **//Firstname**// -->
+                  
                     <div class="form-group col-md-6 col-sm-12">
       
                             <label for="firstname">Firstname</label>
@@ -59,7 +59,7 @@
           
                     </div>
        
-                    <!-- **//Email**// -->
+                 
                     <div class="form-group col-md-12 col-sm-12">
       
                         <label for="email">email address</label>
@@ -77,7 +77,7 @@
                          
                     </div>
 
-                      <!-- **//Phone_number**// -->
+                
                     <div class="form-group col-md-12 col-sm-12">
       
                           <label for="phone_number">Phone Number</label>
@@ -94,7 +94,7 @@
       
                     </div>
 
-                      <!-- **//Password**// -->
+                 
                     <div class="form-group col-md-12 col-sm-12">
       
                         <label for="password">password</label>
@@ -110,7 +110,6 @@
       
                     </div>
 
-                    <!-- **//Gender**// -->
                     <div class="form-group col-md-12 col-sm-12">
             
                         <label for="gender">Gender</label>
@@ -128,7 +127,7 @@
                     
                     </div>
                     
-                    <!-- **//D_O_B**// -->
+                
                     <div class="form-group col-md-12 col-sm-12">
                       <label for="date_of_birth">Date of birth</label>
         
@@ -161,7 +160,6 @@
                           </div>
                     </div>
 
-                        <!-- SignUp -->
                     <div class="form-group col-md-12">
             
                         <button class="btn">Sign Up</button>
@@ -184,4 +182,82 @@
     </div>
 </div>
     
+</div> -->
+
+
+<div class="container" data-aos="fade-up">
+   
+  <form [formGroup]="reactiveForm" >
+   <h3>Create an Account</h3>
+      <div class="row">
+         
+          <div class="form-group col-md-6">
+              <label for="firstname">first name</label>
+              <input type="text" class="form-control" formControlName="firstname" ngModel>
+          </div>
+          <div class="form-group col-md-6">
+              <label for="lastname">last name</label>
+              <input type="text" class="form-control" formControlName="lastname" ngModel>
+          </div>
+          <div class="form-group col-md-12">
+              <label for="username">username</label>
+              <input type="text" class="form-control" formControlName="username" ngModel>
+          </div>
+          <div class="form-group col-md-12">
+              <label for="email">email</label>
+              <input type="email" class="form-control" formControlName="email" ngModel>
+          </div>
+          <div class="form-group col-md-12">
+              <label for="phone">phone number</label>
+              <input type="tel" class="form-control" formControlName="phone_number" ngModel>
+          </div>
+          <div class="form-group col-md-12">
+              <label for="password">password</label>
+              <input type="password" class="form-control" formControlName="password" ngModel>
+          </div>
+
+          <div class="form-group col-md-12">
+            
+            <label for="gender">Gender</label>
+            <select class="form-control" formControlName="gender" ngModel>
+            
+              <option>male</option>
+              <option>female</option>
+
+            </select>
+        
+        </div>
+
+          <div class="form-group col-md-12">
+              <label for="date_of_birth">date of birth</label>
+              <input type="date" class="form-control" formControlName="date_of_birth" ngModel>
+          </div>
+          <div class="col-md-12">
+            <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" id="autoSizingChec">
+                <label class="form-check-label" for="autoSizingChec">
+                  Subscribe to Newsletter
+                </label>
+              </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                <label class="form-check-label" for="autoSizingCheck">
+                  i agree with the <a>terms and condition </a> and <a>privacy policy</a>
+                </label>
+              </div>
+        </div>
+          <div class="col-md-12">
+              <button class="btn  btn-primary login_btn">Login</button>
+          </div>
+          <div class="mt-4 col-md-12">
+   
+              <p class="mb-5 link">Have an account? <a (click)="login()">Login</a></p>
+   
+         </div>
+      </div>
+  </form>
+
 </div>

@@ -1,8 +1,9 @@
- .home-inner {
-    /* background-image: url("../../assets/img/bookcase-zoom-background.jpg"); */
+ /* .home-inner {
+    background-image: url("../../assets/img/bookcase-zoom-background.jpg");
     background-image: url("../../assets/img/71473.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     height: 950px;
     opacity: .4;
@@ -12,27 +13,15 @@
     height: 950px;
     background-size: cover;
     z-index: 1;
+} */
+
+
+.hero{
+    background:#f8f9fa;
 }
 
-
-/* #second {
-    position: absolute;
-    top: 15%;
-    margin-top: -700px;
-    z-index: 1;
-    max-width: 100%;
-    color: black;
-}  */
-
-
-#second h1{
-    padding-top:20px;
-    /* font-size: 60px;
-    font-weight: 800; */
-}
-.first{
-    position: relative;
-    top: -80%;
+#row{
+    padding-top: 100px;
 }
 
 .first .col-md-6{
@@ -74,7 +63,6 @@ small{
 
 .lay {
     background-color: #fafbfc;
-    height: inherit;
 }
 
 .media{
@@ -120,16 +108,13 @@ li{
 }
 
 @media(max-width:767px){
-    .home-wrap {
+    /* .home-wrap {
         height: 570px;
     }
     .home-inner{
         height: 570px;
-    }
-    /* #getter img{
-        width:100px;
-        height: 50px;
     } */
+
     h1{
         font-size: 30px;
     }
