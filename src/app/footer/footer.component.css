@@ -1,8 +1,9 @@
 .footer{
-
+    color: #fff;
+    text-align: center;
     padding: 2em 0 2em 0;
     background-color: #f8f9fa;
-    
+    width: 100%;
 }
 
 img{

@@ -202,3 +202,8 @@ span{
     padding-top:20px
 }
 
+@media  (max-width:767px){
+	.container{
+		width: 360px;
+	}
+}
