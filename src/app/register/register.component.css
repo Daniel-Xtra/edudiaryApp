@@ -162,8 +162,9 @@ label a, .link a{
 	color: #3281ff;
 	cursor: pointer;
 }
-@media  (max-width:767px){
+@media(max-width:767px){
 	.container{
-		width: 360px;
+		width:300px;
 	}
 }
+
