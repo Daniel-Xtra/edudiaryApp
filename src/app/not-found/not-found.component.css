@@ -1,0 +1,10 @@
+h2,h4{
+    color: red;
+    font-size: 70px;
+    font-weight: bolder;
+    text-align: center;
+}
+.col-md-12{
+    padding-top:300px;
+    padding-bottom: 300px;
+}
